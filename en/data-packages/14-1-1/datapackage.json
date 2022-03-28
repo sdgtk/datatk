@@ -1,0 +1,50 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          },
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.redlistcat",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Data Deficient",
+                "Threatened",
+                "Not Evaluated",
+                "Threatened with Extinction",
+                "Threat of Unknown Extent",
+                "Extinct or Lost",
+                "Extremely Rare",
+                "Near Threatened",
+                "Highly Threatened",
+                "Not Threatened"
+              ]
+            },
+            "title": "Red List Categories"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "14-1-1",
+  "title": "Red list classification of fish species occurring in Berlin waters"
+}

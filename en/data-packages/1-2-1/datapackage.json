@@ -1,0 +1,43 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          },
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Repair Cafes",
+                "ReUse Shops",
+                "Community Workshops"
+              ]
+            },
+            "title": "Group"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "1-2-1",
+  "title": "Number of repair cafes, community workshops and ReUse shops in Treptow-Köpenick"
+}
