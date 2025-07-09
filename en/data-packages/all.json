@@ -3,8 +3,8 @@
   "title": "All indicators",
   "resources": [
     {
-      "path": "14-1-1/data.csv",
-      "name": "14-1-1",
+      "path": "5-3-1/data.csv",
+      "name": "5-3-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -13,42 +13,22 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
           },
           {
-            "name": "data.redlistcat",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Data Deficient",
-                "Threatened",
-                "Not Evaluated",
-                "Threatened with Extinction",
-                "Threat of Unknown Extent",
-                "Extinct or Lost",
-                "Extremely Rare",
-                "Near Threatened",
-                "Highly Threatened",
-                "Not Threatened"
-              ]
-            },
-            "title": "Red List Categories"
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
-      "title": "Red list classification of fish species occurring in Berlin waters"
+      "title": "Number of projects, contact points and counseling services for girls and young women in Treptow-Köpenick"
     },
     {
-      "path": "2-1-1/data.csv",
-      "name": "2-1-1",
+      "path": "13-3-1/data.csv",
+      "name": "13-3-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -57,131 +37,36 @@
       "schema": {
         "fields": [
           {
-            "name": "District",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Treptow-Koepenick"
-              ]
-            },
-            "title": "District"
-          },
-          {
-            "name": "GeoCode",
-            "type": "string",
-            "title": "GeoCode"
-          },
-          {
-            "name": "Ortsteil",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Adlershof",
-                "Alt-Treptow",
-                "Altglienicke",
-                "Baumschulenweg",
-                "Bohnsdorf",
-                "Friedrichshagen",
-                "Gruenau",
-                "Johannisthal",
-                "Koepenick",
-                "Mueggelheim",
-                "Niederschoeneweide",
-                "Oberschoeneweide",
-                "Plaenterwald",
-                "Rahnsdorf",
-                "Schmoeckwitz"
-              ]
-            },
-            "title": "Ortsteil"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Publicly accessible fruit trees and kitchen gardens"
-    },
-    {
-      "path": "13-2-3/data.csv",
-      "name": "13-2-3",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Kilometers of bike freeways in the district"
-    },
-    {
-      "path": "16-3-1/data.csv",
-      "name": "16-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
           },
           {
-            "name": "data.incident",
+            "name": "data.esek",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Ableism",
-                "Anti-Semitism",
-                "Political opponents",
-                "LGBTIQ* hostility",
-                "Racism",
-                "Right-wing and extreme right-wing self-portrayal",
-                "Social-chauvinism",
                 "Total",
-                "NS trivialization and glorification",
-                "Campaign"
+                "Manufacturing sector",
+                "Transportation",
+                "Households, business, trade and services, other consumers",
+                ""
               ]
             },
-            "title": "Type of incident"
+            "title": "Emitting sectors"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
           }
         ]
       },
-      "title": "Number of racist, anti-Semitic, homophobic and right-wing extremist incidents per year in Treptow-Köpenick"
+      "title": "CO2 emissions from final energy consumption (polluter balance)"
     },
     {
-      "path": "17-6-1/data.csv",
-      "name": "17-6-1",
+      "path": "17-3-2/data.csv",
+      "name": "17-3-2",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -190,90 +75,18 @@
       "schema": {
         "fields": [
           {
-            "name": "Group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "A",
-                "B"
-              ]
-            },
-            "title": "Group"
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
           },
           {
             "name": "Value",
             "type": "integer",
             "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
           }
         ]
       },
-      "title": "Public spending on development cooperation (Official Development Assistance, ODA)"
-    },
-    {
-      "path": "14-2-1/data.csv",
-      "name": "14-2-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "A",
-                "B"
-              ]
-            },
-            "title": "Group"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of residents attending ranger consultation hours"
-    },
-    {
-      "path": "17-3-3/data.csv",
-      "name": "17-3-3",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "School partnerships"
+      "title": "Community projects and partnerships"
     },
     {
       "path": "7-2-2/data.csv",
@@ -286,448 +99,18 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
       "title": "Electricity generation on district-owned buildings (kWh/year)"
-    },
-    {
-      "path": "15-3-1/data.csv",
-      "name": "15-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.area",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Nature reserves",
-                "Protected landscape areas",
-                "Total"
-              ]
-            },
-            "title": "Area"
-          }
-        ]
-      },
-      "title": "Nature reserves and protected landscape areas (area in ha)"
-    },
-    {
-      "path": "9-2-1/data.csv",
-      "name": "9-2-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.zug",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Indoor",
-                "Outdoor"
-              ]
-            },
-            "title": "Access Points"
-          }
-        ]
-      },
-      "title": "Number of public facilities with free WLAN access"
-    },
-    {
-      "path": "15-1-1/data.csv",
-      "name": "15-1-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.antworten",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Yes-Answers",
-                "No-Answers"
-              ]
-            },
-            "title": "Answers"
-          }
-        ]
-      },
-      "title": "Municipal Climate Adaptation Index"
-    },
-    {
-      "path": "17-4-1/data.csv",
-      "name": "17-4-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.einewelt",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Parish projects",
-                "School partnerships",
-                "City partnerships",
-                "Fair Trade Shops",
-                "Civil society projects"
-              ]
-            },
-            "title": "One-World-Projects"
-          }
-        ]
-      },
-      "title": "One world projects and partnerships in the Treptow-Köpenick district"
-    },
-    {
-      "path": "7-2-1/data.csv",
-      "name": "7-2-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of photovoltaic systems on district-owned buildings"
-    },
-    {
-      "path": "9-3-1/data.csv",
-      "name": "9-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.availability",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "10 Mbit/s",
-                "100 Mbit/s",
-                "1000 Mbit/s",
-                "16 Mbit/s",
-                "200 Mbit/s",
-                "30 Mbit/s",
-                "50 Mbit/s"
-              ]
-            },
-            "title": "Availability"
-          }
-        ]
-      },
-      "title": "Broadband availability Mbit/s in %."
-    },
-    {
-      "path": "3-2-1/data.csv",
-      "name": "3-2-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.noise",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "High",
-                "Low",
-                "Medium",
-                "No values"
-              ]
-            },
-            "title": "Relative noise pollution"
-          }
-        ]
-      },
-      "title": "Relative noise pollution in Treptow-Köpenick (Environmental justice)"
-    },
-    {
-      "path": "17-1-1/data.csv",
-      "name": "17-1-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.partner",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Albinea",
-                "Cajamarca",
-                "East Norriton",
-                "Eskisehir",
-                "Izola",
-                "Köln",
-                "Mürzzuschlag",
-                "Odernheim",
-                "Olomouc",
-                "Subotica",
-                "Veszprem",
-                "Warszawa",
-                "Total"
-              ]
-            },
-            "title": "Twin Town"
-          }
-        ]
-      },
-      "title": "Number of activities with twin towns and events on the subject of city partnerships of the Treptow-Köpenick district office per year"
-    },
-    {
-      "path": "8-3-2/data.csv",
-      "name": "8-3-2",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "A",
-                "B"
-              ]
-            },
-            "title": "Group"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Proportion of employees with immigration history in management positions in the local administration"
-    },
-    {
-      "path": "8-3-1/data.csv",
-      "name": "8-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "A",
-                "B"
-              ]
-            },
-            "title": "Group"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Proportion of employees with immigration history"
-    },
-    {
-      "path": "1-3-1/data.csv",
-      "name": "1-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "At-risk-of poverty rate in Treptow-Köpenick"
-    },
-    {
-      "path": "8-2-2/data.csv",
-      "name": "8-2-2",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "A",
-                "B"
-              ]
-            },
-            "title": "Group"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Proportion of applicants with immigration history"
     },
     {
       "path": "13-2-1/data.csv",
@@ -740,22 +123,22 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
       "title": "Average weekday bicycle traffic at the Treptow-Köpenick Kaisersteg counting station"
     },
     {
-      "path": "2-3-1/data.csv",
-      "name": "2-3-1",
+      "path": "9-3-1/data.csv",
+      "name": "9-3-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -764,109 +147,39 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Kilograms of food rescued (foodsharing)"
-    },
-    {
-      "path": "3-1-3/data.csv",
-      "name": "3-1-3",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "City cycling – Kilograms of CO2 saved"
-    },
-    {
-      "path": "11-2-2/data.csv",
-      "name": "11-2-2",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of beekeepers in the district"
-    },
-    {
-      "path": "11-5-2/data.csv",
-      "name": "11-5-2",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
           },
           {
-            "name": "data.gruen",
+            "name": "data.availability",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Green and recreational facilities (incl. playgrounds)",
-                "Cemeteries",
-                "Allotment gardens",
-                "Street green",
-                "Total public green spaces"
+                "10 Mbit/s",
+                "16 Mbit/s",
+                "30 Mbit/s",
+                "50 Mbit/s",
+                "100 Mbit/s",
+                "200 Mbit/s",
+                "1000 Mbit/s",
+                ""
               ]
             },
-            "title": "Public green spaces"
+            "title": "Availability"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
-      "title": "Total supply of public green spaces"
+      "title": "Broadband availability Mbit/s in %."
     },
     {
-      "path": "4-5-1/data.csv",
-      "name": "4-5-1",
+      "path": "10-1-1/data.csv",
+      "name": "10-1-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -875,22 +188,34 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "A",
+                "B",
+                ""
+              ]
+            },
+            "title": "Group"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
-      "title": "Project participants of the project \"Environmental School in Europe - International Sustainability School“"
+      "title": "Proportion of multilingual information materials"
     },
     {
-      "path": "7-3-2/data.csv",
-      "name": "7-3-2",
+      "path": "5-1-1/data.csv",
+      "name": "5-1-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -899,22 +224,34 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "A",
+                "B",
+                ""
+              ]
+            },
+            "title": "Group"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
-      "title": "Photovoltaics - Electricity supply in the district"
+      "title": "Number of schools participating in the project day"
     },
     {
-      "path": "7-3-3/data.csv",
-      "name": "7-3-3",
+      "path": "8-3-2/data.csv",
+      "name": "8-3-2",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -923,22 +260,34 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "A",
+                "B",
+                ""
+              ]
+            },
+            "title": "Group"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
-      "title": "Solar thermal energy - Total installations in the district"
+      "title": "Proportion of employees with immigration history in management positions in the local administration"
     },
     {
-      "path": "10-3-1/data.csv",
-      "name": "10-3-1",
+      "path": "17-3-5/data.csv",
+      "name": "17-3-5",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -947,22 +296,22 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
-      "title": "Number of companies conducting a Common Good Balance in Treptow-Köpenick"
+      "title": "Fair trade"
     },
     {
-      "path": "6-2-1/data.csv",
-      "name": "6-2-1",
+      "path": "1-2-1/data.csv",
+      "name": "1-2-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -971,22 +320,35 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "data.group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Repair Cafes",
+                "Community Workshops",
+                "ReUse Shops",
+                ""
+              ]
+            },
+            "title": "Group"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
-      "title": "Number of extracurricular institutions for nature and environmental education / education for sustainable development (ESD)"
+      "title": "Number of repair cafes, community workshops and ReUse shops in Treptow-Köpenick"
     },
     {
-      "path": "2-2-1/data.csv",
-      "name": "2-2-1",
+      "path": "16-1-1/data.csv",
+      "name": "16-1-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -995,42 +357,18 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
-          }
-        ]
-      },
-      "title": "Fair certified food in Berlin's school catering system"
-    },
-    {
-      "path": "12-3-1/data.csv",
-      "name": "12-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
           },
           {
-            "name": "Year",
+            "name": "Value",
             "type": "integer",
-            "title": "Year"
+            "title": "Value"
           }
         ]
       },
-      "title": "Status of certification of the municipality as a Fairtrade Town"
+      "title": "Number of participatory events on the topic of SDGs organized by the Treptow-Köpenick district office per year"
     },
     {
       "path": "5-2-1/data.csv",
@@ -1043,14 +381,14 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
@@ -1067,22 +405,22 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
       "title": "Number of municipal institutions in Treptow-Köpenick that have a valid \"Common Good Balance\" certificate"
     },
     {
-      "path": "11-4-1/data.csv",
-      "name": "11-4-1",
+      "path": "3-2-1/data.csv",
+      "name": "3-2-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -1090,50 +428,61 @@
       "encoding": "utf-8",
       "schema": {
         "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.noise",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "No values",
+                "Low",
+                "Medium",
+                "High",
+                ""
+              ]
+            },
+            "title": "Relative noise pollution"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Relative noise pollution in Treptow-Köpenick (Environmental justice)"
+    },
+    {
+      "path": "1-3-1/data.csv",
+      "name": "1-3-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
           {
             "name": "Value",
             "type": "number",
             "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.maintransport",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Walking",
-                "Motorized private transport",
-                "Public transport",
-                "Bicycle"
-              ]
-            },
-            "title": "Main means of transport"
-          },
-          {
-            "name": "data.spatialtypes",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "All routes",
-                "Domestic traffic",
-                "Source and destination traffic"
-              ]
-            },
-            "title": "Traffic flow types"
           }
         ]
       },
-      "title": "Frequency of means of transportation used on routes in Treptow-Köpenick"
+      "title": "At-risk-of poverty rate in Treptow-Köpenick"
     },
     {
-      "path": "3-1-1/data.csv",
-      "name": "3-1-1",
+      "path": "17-3-1/data.csv",
+      "name": "17-3-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -1142,22 +491,22 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
-      "title": "City cycling - Number of people participating"
+      "title": "City partnerships"
     },
     {
-      "path": "11-1-2/data.csv",
-      "name": "11-1-2",
+      "path": "9-2-1/data.csv",
+      "name": "9-2-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -1166,55 +515,30 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of cargo bike rentals"
-    },
-    {
-      "path": "9-1-1/data.csv",
-      "name": "9-1-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
           },
           {
-            "name": "data.standort",
+            "name": "data.zug",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Publicly accessible - on private land",
-                "Public space",
-                "Total"
+                "Indoor",
+                "Outdoor",
+                ""
               ]
             },
-            "title": "Location"
+            "title": "Access Points"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
-      "title": "Number of charging stations for e-cars"
+      "title": "Number of public facilities with free WLAN access"
     },
     {
       "path": "6-3-1/data.csv",
@@ -1227,11 +551,6 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "string",
             "title": "Year"
@@ -1241,18 +560,266 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Excellent",
-                "Sufficient",
                 "Good",
-                "Poor"
+                "Sufficient",
+                "Poor",
+                ""
               ]
             },
             "title": "Category"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
       "title": "Bathing water quality of the bathing sites within the district Treptow-Köpenick"
+    },
+    {
+      "path": "12-1-1/data.csv",
+      "name": "12-1-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of training courses on sustainable and fair procurement per year"
+    },
+    {
+      "path": "15-1-1/data.csv",
+      "name": "15-1-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.antworten",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Yes-Answers",
+                "No-Answers",
+                ""
+              ]
+            },
+            "title": "Answers"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Municipal Climate Adaptation Index"
+    },
+    {
+      "path": "7-3-2/data.csv",
+      "name": "7-3-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Photovoltaics - Electricity supply in the district"
+    },
+    {
+      "path": "17-5-1/data.csv",
+      "name": "17-5-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "A",
+                "B",
+                ""
+              ]
+            },
+            "title": "Group"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "To be defined"
+    },
+    {
+      "path": "11-1-2/data.csv",
+      "name": "11-1-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of cargo bike rentals"
+    },
+    {
+      "path": "8-2-2/data.csv",
+      "name": "8-2-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "A",
+                "B",
+                ""
+              ]
+            },
+            "title": "Group"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Proportion of applicants with immigration history"
+    },
+    {
+      "path": "7-3-1/data.csv",
+      "name": "7-3-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.pow",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "<30 kW",
+                ">30 - 40 kW",
+                ">40 - 100 kW",
+                ">100 - 750 kW",
+                ">750 kW",
+                ""
+              ]
+            },
+            "title": "Power class"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Photovoltaics - Total installations in the district"
+    },
+    {
+      "path": "4-2-1/data.csv",
+      "name": "4-2-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of training courses offered on 'Education for Sustainable Development' (ESD) for educational staff at schools in Treptow-Köpenick"
     },
     {
       "path": "16-4-1/data.csv",
@@ -1265,11 +832,6 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
@@ -1279,12 +841,11 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Adlershof",
                 "Allende-Viertel",
-                "Alt-Treptow",
                 "Altglienicke",
                 "Altstadt Köpenick",
+                "Alt-Treptow",
                 "Baumschulenweg",
                 "Bohnsdorf",
                 "Dammvorstadt",
@@ -1299,18 +860,24 @@
                 "Oberschöneweide",
                 "Plänterwald",
                 "Rahnsdorf",
-                "Schmöckwitz"
+                "Schmöckwitz",
+                ""
               ]
             },
             "title": "District region"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
       "title": "Number of structures for citizen participation and actor networking in the district region profiles"
     },
     {
-      "path": "3-1-2/data.csv",
-      "name": "3-1-2",
+      "path": "6-2-1/data.csv",
+      "name": "6-2-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -1319,22 +886,22 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
-      "title": "City cycling - Kilometers ridden by bicycle"
+      "title": "Number of extracurricular institutions for nature and environmental education / education for sustainable development (ESD)"
     },
     {
-      "path": "1-2-1/data.csv",
-      "name": "1-2-1",
+      "path": "7-2-1/data.csv",
+      "name": "7-2-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -1343,51 +910,50 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
             "name": "Value",
             "type": "integer",
             "title": "Value"
-          },
+          }
+        ]
+      },
+      "title": "Number of photovoltaic systems on district-owned buildings"
+    },
+    {
+      "path": "14-3-1/data.csv",
+      "name": "14-3-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
           {
             "name": "Year",
             "type": "integer",
             "title": "Year"
           },
           {
-            "name": "data.group",
+            "name": "Group",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Repair Cafes",
-                "ReUse Shops",
-                "Community Workshops"
+                "A",
+                "B",
+                ""
               ]
             },
             "title": "Group"
-          }
-        ]
-      },
-      "title": "Number of repair cafes, community workshops and ReUse shops in Treptow-Köpenick"
-    },
-    {
-      "path": "4-4-1/data.csv",
-      "name": "4-4-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "string",
-            "title": "Value"
           },
           {
-            "name": "Year",
-            "type": "string",
-            "title": "Year"
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
@@ -1404,13 +970,18 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
             "name": "Group",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "A",
-                "B"
+                "B",
+                ""
               ]
             },
             "title": "Group"
@@ -1419,19 +990,14 @@
             "name": "Value",
             "type": "integer",
             "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
           }
         ]
       },
       "title": "Number of people using the social assistance portal"
     },
     {
-      "path": "12-2-2/data.csv",
-      "name": "12-2-2",
+      "path": "14-2-1/data.csv",
+      "name": "14-2-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -1439,89 +1005,19 @@
       "encoding": "utf-8",
       "schema": {
         "fields": [
-          {
-            "name": "Status",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Certificate",
-                "No Certificate"
-              ]
-            },
-            "title": "Status"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of parishes with ecumenical \"Fair Parish\" certification in the district"
-    },
-    {
-      "path": "7-3-1/data.csv",
-      "name": "7-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
           {
             "name": "Year",
             "type": "integer",
             "title": "Year"
           },
-          {
-            "name": "data.pow",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "<30 kW",
-                ">100 - 750 kW",
-                ">30 - 40 kW",
-                ">40 - 100 kW",
-                ">750 kW"
-              ]
-            },
-            "title": "Power class"
-          }
-        ]
-      },
-      "title": "Photovoltaics - Total installations in the district"
-    },
-    {
-      "path": "14-3-1/data.csv",
-      "name": "14-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
           {
             "name": "Group",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "A",
-                "B"
+                "B",
+                ""
               ]
             },
             "title": "Group"
@@ -1530,541 +1026,10 @@
             "name": "Value",
             "type": "integer",
             "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
           }
         ]
       },
-      "title": "To be defined"
-    },
-    {
-      "path": "17-2-1/data.csv",
-      "name": "17-2-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Quantity of fair trade coffee packages sold (Treptow-Köpenicker Bohne)"
-    },
-    {
-      "path": "8-1-1/data.csv",
-      "name": "8-1-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of companies in Treptow-Köpenick that have a valid \"Common Good Balance\" certificate"
-    },
-    {
-      "path": "4-3-1/data.csv",
-      "name": "4-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "A",
-                "B"
-              ]
-            },
-            "title": "Group"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of adult education center (VHS) courses on global learning, education for sustainable development (ESD) and SDGs"
-    },
-    {
-      "path": "5-3-1/data.csv",
-      "name": "5-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of projects, contact points and counseling services for girls and young women in Treptow-Köpenick"
-    },
-    {
-      "path": "12-1-1/data.csv",
-      "name": "12-1-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of training courses on sustainable and fair procurement per year"
-    },
-    {
-      "path": "4-2-1/data.csv",
-      "name": "4-2-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of training courses offered on 'Education for Sustainable Development' (ESD) for educational staff at schools in Treptow-Köpenick"
-    },
-    {
-      "path": "9-1-2/data.csv",
-      "name": "9-1-2",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Electricity consumption at electric charging stations"
-    },
-    {
-      "path": "13-3-1/data.csv",
-      "name": "13-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.esek",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Manufacturing sector",
-                "Households, business, trade and services, other consumers",
-                "Total",
-                "Transportation"
-              ]
-            },
-            "title": "Emitting sectors"
-          }
-        ]
-      },
-      "title": "CO2 emissions from final energy consumption (polluter balance)"
-    },
-    {
-      "path": "11-1-1/data.csv",
-      "name": "11-1-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "fLotte",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Total",
-                "fLotte kommunal",
-                "fLotte nicht-kommunal"
-              ]
-            },
-            "title": "fLotte"
-          }
-        ]
-      },
-      "title": "Number of cargo bikes that can be borrowed free of charge in the district"
-    },
-    {
-      "path": "5-1-1/data.csv",
-      "name": "5-1-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "A",
-                "B"
-              ]
-            },
-            "title": "Group"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of schools participating in the project day"
-    },
-    {
-      "path": "17-3-1/data.csv",
-      "name": "17-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "City partnerships"
-    },
-    {
-      "path": "16-2-1/data.csv",
-      "name": "16-2-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of interfaith events per year"
-    },
-    {
-      "path": "12-4-1/data.csv",
-      "name": "12-4-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Status",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "In application",
-                "No application",
-                "Fairtrade-School certified"
-              ]
-            },
-            "title": "Status"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of fair trade schools in Treptow-Köpenick"
-    },
-    {
-      "path": "15-2-1/data.csv",
-      "name": "15-2-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of participations of the district in meetings and events of the biodiversity network per year"
-    },
-    {
-      "path": "11-2-3/data.csv",
-      "name": "11-2-3",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of bee colonies in the district"
-    },
-    {
-      "path": "11-2-1/data.csv",
-      "name": "11-2-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "District",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Treptow-Köpenick"
-              ]
-            },
-            "title": "District"
-          },
-          {
-            "name": "GeoCode",
-            "type": "string",
-            "title": "GeoCode"
-          },
-          {
-            "name": "Ortsteil",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Adlershof",
-                "Alt-Treptow",
-                "Altglienicke",
-                "Baumschulenweg",
-                "Bohnsdorf",
-                "Friedrichshagen",
-                "Grünau",
-                "Johannisthal",
-                "Köpenick",
-                "Müggelheim",
-                "Niederschöneweide",
-                "Oberschöneweide",
-                "Plänterwald",
-                "Rahnsdorf",
-                "Schmöckwitz"
-              ]
-            },
-            "title": "Ortsteil"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of pick-up points for community-supported agriculture (CSA) products"
-    },
-    {
-      "path": "13-2-2/data.csv",
-      "name": "13-2-2",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "fLotte",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Total",
-                "fLotte kommunal",
-                "fLotte nicht-kommunal"
-              ]
-            },
-            "title": "fLotte"
-          }
-        ]
-      },
-      "title": "Number of cargo bikes that can be borrowed free of charge in the district"
+      "title": "Number of residents attending ranger consultation hours"
     },
     {
       "path": "7-1-1/data.csv",
@@ -2077,13 +1042,18 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
             "name": "Group",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "A",
-                "B"
+                "B",
+                ""
               ]
             },
             "title": "Group"
@@ -2092,19 +1062,14 @@
             "name": "Value",
             "type": "integer",
             "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
           }
         ]
       },
       "title": "To be defined"
     },
     {
-      "path": "6-1-1/data.csv",
-      "name": "6-1-1",
+      "path": "2-1-1/data.csv",
+      "name": "2-1-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -2113,238 +1078,59 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
           },
           {
-            "name": "data.zustand",
+            "name": "Ortsteil",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Saprobity",
-                "Trophicity"
+                "Adlershof",
+                "Altglienicke",
+                "Alt-Treptow",
+                "Baumschulenweg",
+                "Bohnsdorf",
+                "Friedrichshagen",
+                "Gruenau",
+                "Johannisthal",
+                "Koepenick",
+                "Mueggelheim",
+                "Niederschoeneweide",
+                "Oberschoeneweide",
+                "Plaenterwald",
+                "Rahnsdorf",
+                "Schmoeckwitz",
+                ""
               ]
             },
-            "title": "Status"
-          }
-        ]
-      },
-      "title": "Saprobity (organic load) and trophicity (nutrient load) of the Müggelsee lake"
-    },
-    {
-      "path": "12-2-1/data.csv",
-      "name": "12-2-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
+            "title": "Ortsteil"
           },
           {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of parishes that are part of the Fairtrade Town campaign"
-    },
-    {
-      "path": "13-1-2/data.csv",
-      "name": "13-1-2",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.antworten",
+            "name": "District",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Yes-Answers",
-                "No-Answers"
+                "Treptow-Koepenick",
+                ""
               ]
             },
-            "title": "Answers"
-          }
-        ]
-      },
-      "title": "Municipal Climate Protection Index"
-    },
-    {
-      "path": "11-5-1/data.csv",
-      "name": "11-5-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
+            "title": "District"
           },
           {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.area",
+            "name": "GeoCode",
             "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Sports, leisure and recreation area",
-                "Industrial and commercial area",
-                "Settlement area",
-                "Residential area"
-              ]
-            },
-            "title": "Area"
-          }
-        ]
-      },
-      "title": "Sports, leisure and recreation space in Treptow-Köpenick"
-    },
-    {
-      "path": "3-3-2/data.csv",
-      "name": "3-3-2",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.luftg",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Ozone 8-hour values",
-                "Ozone hourly values",
-                "Particulates (PM10)"
-              ]
-            },
-            "title": "Air quality"
-          }
-        ]
-      },
-      "title": "Air pollution limits in Treptow-Köpenick"
-    },
-    {
-      "path": "8-5-1/data.csv",
-      "name": "8-5-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          },
-          {
-            "name": "data.sex",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Gender Pay Gap",
-                "Men",
-                "Women"
-              ]
-            },
-            "title": "Sex"
-          }
-        ]
-      },
-      "title": "Gross hourly earnings and earnings gaps between women and men (Gender Pay Gap unadjusted)"
-    },
-    {
-      "path": "17-5-1/data.csv",
-      "name": "17-5-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "A",
-                "B"
-              ]
-            },
-            "title": "Group"
+            "title": "GeoCode"
           },
           {
             "name": "Value",
             "type": "integer",
             "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
           }
         ]
       },
-      "title": "To be defined"
+      "title": "Publicly accessible fruit trees and kitchen gardens"
     },
     {
       "path": "15-4-1/data.csv",
@@ -2357,13 +1143,18 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
             "name": "Group",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "A",
-                "B"
+                "B",
+                ""
               ]
             },
             "title": "Group"
@@ -2372,19 +1163,14 @@
             "name": "Value",
             "type": "integer",
             "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
           }
         ]
       },
       "title": "To be defined"
     },
     {
-      "path": "5-4-1/data.csv",
-      "name": "5-4-1",
+      "path": "4-4-1/data.csv",
+      "name": "4-4-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -2392,284 +1178,19 @@
       "encoding": "utf-8",
       "schema": {
         "fields": [
-          {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
-          },
           {
             "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Proportion of women in management positions in the public sector"
-    },
-    {
-      "path": "17-3-2/data.csv",
-      "name": "17-3-2",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Community projects and partnerships"
-    },
-    {
-      "path": "17-3-5/data.csv",
-      "name": "17-3-5",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Fair trade"
-    },
-    {
-      "path": "10-4-1/data.csv",
-      "name": "10-4-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Region",
             "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Berlin",
-                "Treptow-Köpenick"
-              ]
-            },
-            "title": "Region"
-          },
-          {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Gini coefficient of equivalent income in Treptow-Köpenick"
-    },
-    {
-      "path": "4-1-1/data.csv",
-      "name": "4-1-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of schools participating in learning conferences per year"
-    },
-    {
-      "path": "13-1-1/data.csv",
-      "name": "13-1-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Full-time equivalents for climate protection management"
-    },
-    {
-      "path": "5-5-1/data.csv",
-      "name": "5-5-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
             "title": "Year"
           },
           {
-            "name": "data.sex",
+            "name": "Value",
             "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Men",
-                "Total",
-                "Women"
-              ]
-            },
-            "title": "Sex"
-          }
-        ]
-      },
-      "title": "Proportion of women in the Treptow-Köpenick district assembly (BVV)"
-    },
-    {
-      "path": "11-3-1/data.csv",
-      "name": "11-3-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "integer",
             "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
           }
         ]
       },
-      "title": "Number of tree patrons"
-    },
-    {
-      "path": "10-1-1/data.csv",
-      "name": "10-1-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "A",
-                "B"
-              ]
-            },
-            "title": "Group"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Proportion of multilingual information materials"
-    },
-    {
-      "path": "8-2-1/data.csv",
-      "name": "8-2-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "A",
-                "B"
-              ]
-            },
-            "title": "Group"
-          },
-          {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Number of participants in the mentoring program"
+      "title": "To be defined"
     },
     {
       "path": "17-3-4/data.csv",
@@ -2682,22 +1203,22 @@
       "schema": {
         "fields": [
           {
-            "name": "Value",
-            "type": "integer",
-            "title": "Value"
-          },
-          {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
       "title": "Other civil society projects"
     },
     {
-      "path": "3-3-1/data.csv",
-      "name": "3-3-1",
+      "path": "4-5-1/data.csv",
+      "name": "4-5-1",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -2706,31 +1227,551 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
             "name": "Value",
             "type": "integer",
             "title": "Value"
-          },
+          }
+        ]
+      },
+      "title": "Project participants of the project \"Environmental School in Europe - International Sustainability School“"
+    },
+    {
+      "path": "13-2-2/data.csv",
+      "name": "13-2-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
           {
             "name": "Year",
             "type": "integer",
             "title": "Year"
           },
           {
-            "name": "data.air",
+            "name": "fLotte",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "High",
-                "Low",
-                "Medium"
+                "fLotte kommunal",
+                "fLotte nicht-kommunal",
+                "Total",
+                ""
               ]
             },
-            "title": "Relative air pollution"
+            "title": "fLotte"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
           }
         ]
       },
-      "title": "Relative air pollution in Treptow-Köpenick (Environmental justice)"
+      "title": "Number of cargo bikes that can be borrowed free of charge in the district"
+    },
+    {
+      "path": "12-2-1/data.csv",
+      "name": "12-2-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of parishes that are part of the Fairtrade Town campaign"
+    },
+    {
+      "path": "17-1-1/data.csv",
+      "name": "17-1-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.partner",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Albinea",
+                "Cajamarca",
+                "East Norriton",
+                "Eskisehir",
+                "Izola",
+                "Köln",
+                "Mürzzuschlag",
+                "Odernheim",
+                "Olomouc",
+                "Subotica",
+                "Veszprem",
+                "Warszawa",
+                "Total",
+                ""
+              ]
+            },
+            "title": "Twin Town"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of activities with twin towns and events on the subject of city partnerships of the Treptow-Köpenick district office per year"
+    },
+    {
+      "path": "10-3-1/data.csv",
+      "name": "10-3-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of companies conducting a Common Good Balance in Treptow-Köpenick"
+    },
+    {
+      "path": "11-5-1/data.csv",
+      "name": "11-5-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.area",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Settlement area",
+                "Residential area",
+                "Industrial and commercial area",
+                "Sports, leisure and recreation area",
+                ""
+              ]
+            },
+            "title": "Area"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Sports, leisure and recreation space in Treptow-Köpenick"
+    },
+    {
+      "path": "4-3-1/data.csv",
+      "name": "4-3-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "A",
+                "B",
+                ""
+              ]
+            },
+            "title": "Group"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of adult education center (VHS) courses on global learning, education for sustainable development (ESD) and SDGs"
+    },
+    {
+      "path": "9-1-2/data.csv",
+      "name": "9-1-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Electricity consumption at electric charging stations"
+    },
+    {
+      "path": "6-1-1/data.csv",
+      "name": "6-1-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.zustand",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Saprobity",
+                "Trophicity",
+                ""
+              ]
+            },
+            "title": "Status"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Saprobity (organic load) and trophicity (nutrient load) of the Müggelsee lake"
+    },
+    {
+      "path": "8-2-1/data.csv",
+      "name": "8-2-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "A",
+                "B",
+                ""
+              ]
+            },
+            "title": "Group"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of participants in the mentoring program"
+    },
+    {
+      "path": "15-2-1/data.csv",
+      "name": "15-2-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of participations of the district in meetings and events of the biodiversity network per year"
+    },
+    {
+      "path": "12-2-2/data.csv",
+      "name": "12-2-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Certificate",
+                "No Certificate",
+                ""
+              ]
+            },
+            "title": "Status"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of parishes with ecumenical \"Fair Parish\" certification in the district"
+    },
+    {
+      "path": "12-3-1/data.csv",
+      "name": "12-3-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Status of certification of the municipality as a Fairtrade Town"
+    },
+    {
+      "path": "11-3-1/data.csv",
+      "name": "11-3-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of tree patrons"
+    },
+    {
+      "path": "17-4-1/data.csv",
+      "name": "17-4-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.einewelt",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "City partnerships",
+                "Parish projects",
+                "School partnerships",
+                "Civil society projects",
+                "Fair Trade Shops",
+                ""
+              ]
+            },
+            "title": "One-World-Projects"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "One world projects and partnerships in the Treptow-Köpenick district"
+    },
+    {
+      "path": "13-2-3/data.csv",
+      "name": "13-2-3",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Kilometers of bike freeways in the district"
+    },
+    {
+      "path": "4-1-1/data.csv",
+      "name": "4-1-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of schools participating in learning conferences per year"
+    },
+    {
+      "path": "8-3-1/data.csv",
+      "name": "8-3-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "A",
+                "B",
+                ""
+              ]
+            },
+            "title": "Group"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Proportion of employees with immigration history"
     },
     {
       "path": "10-2-1/data.csv",
@@ -2743,13 +1784,18 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
             "name": "Group",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "A",
-                "B"
+                "B",
+                ""
               ]
             },
             "title": "Group"
@@ -2758,19 +1804,14 @@
             "name": "Value",
             "type": "integer",
             "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "integer",
-            "title": "Year"
           }
         ]
       },
       "title": "Number of training courses offered within the district administration"
     },
     {
-      "path": "16-1-1/data.csv",
-      "name": "16-1-1",
+      "path": "3-1-3/data.csv",
+      "name": "3-1-3",
       "profile": "tabular-data-resource",
       "scheme": "file",
       "format": "csv",
@@ -2779,18 +1820,977 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
             "name": "Value",
             "type": "integer",
             "title": "Value"
-          },
+          }
+        ]
+      },
+      "title": "City cycling – Kilograms of CO2 saved"
+    },
+    {
+      "path": "13-1-1/data.csv",
+      "name": "13-1-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
           {
             "name": "Year",
             "type": "integer",
             "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
           }
         ]
       },
-      "title": "Number of participatory events on the topic of SDGs organized by the Treptow-Köpenick district office per year"
+      "title": "Full-time equivalents for climate protection management"
+    },
+    {
+      "path": "11-2-2/data.csv",
+      "name": "11-2-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of beekeepers in the district"
+    },
+    {
+      "path": "17-2-1/data.csv",
+      "name": "17-2-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Quantity of fair trade coffee packages sold (Treptow-Köpenicker Bohne)"
+    },
+    {
+      "path": "11-1-1/data.csv",
+      "name": "11-1-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "fLotte",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "fLotte kommunal",
+                "fLotte nicht-kommunal",
+                "Total",
+                ""
+              ]
+            },
+            "title": "fLotte"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of cargo bikes that can be borrowed free of charge in the district"
+    },
+    {
+      "path": "3-3-1/data.csv",
+      "name": "3-3-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.air",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Low",
+                "Medium",
+                "High",
+                ""
+              ]
+            },
+            "title": "Relative air pollution"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Relative air pollution in Treptow-Köpenick (Environmental justice)"
+    },
+    {
+      "path": "3-1-1/data.csv",
+      "name": "3-1-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "City cycling - Number of people participating"
+    },
+    {
+      "path": "8-5-1/data.csv",
+      "name": "8-5-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Women",
+                "Men",
+                "Gender Pay Gap",
+                ""
+              ]
+            },
+            "title": "Sex"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Gross hourly earnings and earnings gaps between women and men (Gender Pay Gap unadjusted)"
+    },
+    {
+      "path": "10-4-1/data.csv",
+      "name": "10-4-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Treptow-Köpenick",
+                "Berlin",
+                ""
+              ]
+            },
+            "title": "Region"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Gini coefficient of equivalent income in Treptow-Köpenick"
+    },
+    {
+      "path": "14-1-1/data.csv",
+      "name": "14-1-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.redlistcat",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Extinct or Lost",
+                "Threatened with Extinction",
+                "Highly Threatened",
+                "Threatened",
+                "Threat of Unknown Extent",
+                "Extremely Rare",
+                "Near Threatened",
+                "Not Threatened",
+                "Data Deficient",
+                "Not Evaluated",
+                ""
+              ]
+            },
+            "title": "Red List Categories"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Red list classification of fish species occurring in Berlin waters"
+    },
+    {
+      "path": "5-5-1/data.csv",
+      "name": "5-5-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Women",
+                "Men",
+                "Total",
+                ""
+              ]
+            },
+            "title": "Sex"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Proportion of women in the Treptow-Köpenick district assembly (BVV)"
+    },
+    {
+      "path": "7-3-3/data.csv",
+      "name": "7-3-3",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Solar thermal energy - Total installations in the district"
+    },
+    {
+      "path": "3-3-2/data.csv",
+      "name": "3-3-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.luftg",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Particulates (PM10)",
+                "Ozone hourly values",
+                "Ozone 8-hour values",
+                ""
+              ]
+            },
+            "title": "Air quality"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Air pollution limits in Treptow-Köpenick"
+    },
+    {
+      "path": "5-4-1/data.csv",
+      "name": "5-4-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Proportion of women in management positions in the public sector"
+    },
+    {
+      "path": "2-3-1/data.csv",
+      "name": "2-3-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Kilograms of food rescued (foodsharing)"
+    },
+    {
+      "path": "16-2-1/data.csv",
+      "name": "16-2-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of interfaith events per year"
+    },
+    {
+      "path": "3-1-2/data.csv",
+      "name": "3-1-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "City cycling - Kilometers ridden by bicycle"
+    },
+    {
+      "path": "13-1-2/data.csv",
+      "name": "13-1-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.antworten",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Yes-Answers",
+                "No-Answers",
+                ""
+              ]
+            },
+            "title": "Answers"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Municipal Climate Protection Index"
+    },
+    {
+      "path": "11-4-1/data.csv",
+      "name": "11-4-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.maintransport",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Walking",
+                "Bicycle",
+                "Motorized private transport",
+                "Public transport",
+                ""
+              ]
+            },
+            "title": "Main means of transport"
+          },
+          {
+            "name": "data.spatialtypes",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Domestic traffic",
+                "Source and destination traffic",
+                "All routes",
+                ""
+              ]
+            },
+            "title": "Traffic flow types"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Frequency of means of transportation used on routes in Treptow-Köpenick"
+    },
+    {
+      "path": "17-3-3/data.csv",
+      "name": "17-3-3",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "School partnerships"
+    },
+    {
+      "path": "8-1-1/data.csv",
+      "name": "8-1-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of companies in Treptow-Köpenick that have a valid \"Common Good Balance\" certificate"
+    },
+    {
+      "path": "16-3-1/data.csv",
+      "name": "16-3-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.incident",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Total",
+                "Campaign",
+                "Ableism",
+                "Social-chauvinism",
+                "LGBTIQ* hostility",
+                "Anti-Semitism",
+                "Right-wing and extreme right-wing self-portrayal",
+                "Political opponents",
+                "NS trivialization and glorification",
+                "Racism",
+                ""
+              ]
+            },
+            "title": "Type of incident"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of racist, anti-Semitic, homophobic and right-wing extremist incidents per year in Treptow-Köpenick"
+    },
+    {
+      "path": "12-4-1/data.csv",
+      "name": "12-4-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "No application",
+                "In application",
+                "Fairtrade-School certified",
+                ""
+              ]
+            },
+            "title": "Status"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of fair trade schools in Treptow-Köpenick"
+    },
+    {
+      "path": "11-2-3/data.csv",
+      "name": "11-2-3",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of bee colonies in the district"
+    },
+    {
+      "path": "11-5-2/data.csv",
+      "name": "11-5-2",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.gruen",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Green and recreational facilities (incl. playgrounds)",
+                "Allotment gardens",
+                "Cemeteries",
+                "Street green",
+                "Total public green spaces",
+                ""
+              ]
+            },
+            "title": "Public green spaces"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Total supply of public green spaces"
+    },
+    {
+      "path": "15-3-1/data.csv",
+      "name": "15-3-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.area",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Nature reserves",
+                "Protected landscape areas",
+                "Total",
+                ""
+              ]
+            },
+            "title": "Area"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Nature reserves and protected landscape areas (area in ha)"
+    },
+    {
+      "path": "2-2-1/data.csv",
+      "name": "2-2-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Fair certified food in Berlin's school catering system"
+    },
+    {
+      "path": "11-2-1/data.csv",
+      "name": "11-2-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Ortsteil",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Alt-Treptow",
+                "Plänterwald",
+                "Baumschulenweg",
+                "Johannisthal",
+                "Niederschöneweide",
+                "Altglienicke",
+                "Adlershof",
+                "Bohnsdorf",
+                "Oberschöneweide",
+                "Köpenick",
+                "Friedrichshagen",
+                "Rahnsdorf",
+                "Grünau",
+                "Müggelheim",
+                "Schmöckwitz",
+                ""
+              ]
+            },
+            "title": "Ortsteil"
+          },
+          {
+            "name": "District",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Treptow-Köpenick",
+                ""
+              ]
+            },
+            "title": "District"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string",
+            "title": "GeoCode"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of pick-up points for community-supported agriculture (CSA) products"
+    },
+    {
+      "path": "17-6-1/data.csv",
+      "name": "17-6-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "Group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "A",
+                "B",
+                ""
+              ]
+            },
+            "title": "Group"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Public spending on development cooperation (Official Development Assistance, ODA)"
+    },
+    {
+      "path": "9-1-1/data.csv",
+      "name": "9-1-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "data.standort",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Public space",
+                "Publicly accessible - on private land",
+                "Total",
+                ""
+              ]
+            },
+            "title": "Location"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      },
+      "title": "Number of charging stations for e-cars"
     }
   ]
 }
